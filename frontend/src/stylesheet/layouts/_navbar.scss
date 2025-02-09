@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  height: var(--navbar-height);
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  width: 100%;
+  //background-color: lightblue;
+  padding: 2em;
+
+  .navbar__brand {
+    color: black;
+    font-family: "Teachers", sans-serif;
+    //font-size: 2.3rem;
+
+    span {
+      font-family: "Teachers", sans-serif;
+      color: #01204E;
+    }
+  }
+
+  .navbar__items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    .navbar__item {
+      a {
+        text-decoration: none;
+        margin: 0 1em;
+      }
+    }
+
+  }
+}

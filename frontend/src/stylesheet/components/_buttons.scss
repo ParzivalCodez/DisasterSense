@@ -1,0 +1,17 @@
+.button__primary {
+  background-color: #01204E;
+  padding: 0.8em;
+  color: white;
+  border: unset;
+  font-family: "Teachers", sans-serif;
+  font-size: 1.1rem;
+  transition: all ease-in-out .2s;
+}
+
+
+.button__primary:hover {
+  background-color: #333A73;
+  cursor: pointer;
+}
+
+

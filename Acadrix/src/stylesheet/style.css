@@ -1,0 +1,208 @@
+.button__primary {
+  background-color: var(--bg-primary);
+  padding: 0.8em;
+  color: white;
+  border: unset;
+  font-family: PoppinsRegular, sans-serif;
+  font-size: 1.3rem;
+}
+
+.button__primary {
+  background-color: var(--bg-primary);
+  padding: 0.8em;
+  color: white;
+  border: unset;
+  font-family: PoppinsRegular, sans-serif;
+  font-size: 1.3rem;
+}
+
+.navbar {
+  display: flex;
+  height: var(--navbar-height);
+  justify-content: space-between;
+  background-color: var(--background);
+  color: white;
+  align-items: center;
+  padding: 2em 3em;
+}
+.navbar .navbar__brand {
+  font-family: PoppinsExtraBold, sans-serif;
+  font-size: 2.3rem;
+}
+.navbar .navbar__items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.navbar .navbar__items .navbar__item a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+.text__gradient {
+  background: linear-gradient(90deg, var(--bg-secondary), var(--bg-secondary), var(--bg-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero {
+  height: calc(50vh - var(--navbar-height));
+  background-color: var(--background);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero__cta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: radial-gradient(ellipse, rgba(88, 116, 230, 0.6) 10%, var(--background) 50%);
+}
+.hero .hero__cta h1 {
+  font-family: PoppinsBold, sans-serif;
+  font-size: 3.8rem;
+  max-width: 15ch;
+  text-align: center;
+  line-height: 1.5;
+}
+.hero .hero__cta p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.hero .hero__cta .hero-cta__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 3em;
+}
+.hero .hero__cta .hero-cta__buttons .button__primary {
+  flex: 1;
+}
+
+#dashboard__wrapper {
+  height: 100vh;
+}
+#dashboard__wrapper .dashboard__greeting {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--background);
+}
+
+.dashboard-greeting-card__profile {
+  height: 130px;
+  width: 130px;
+  background-color: #5974e6;
+  clip-path: circle();
+}
+
+.dashboard-greeting__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.dashboard-greeting__card h1 {
+  font-family: PoppinsBold, sans-serif;
+  font-size: 2.5rem;
+}
+
+.dashboard__navigation {
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+}
+.dashboard__navigation ul {
+  display: flex;
+  list-style: none;
+}
+.dashboard__navigation ul li {
+  margin: 0 1em;
+  font-size: 1.2rem;
+}
+
+.dashboard__content {
+  height: 60vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.active {
+  font-family: PoppinsBold, sans-serif;
+  padding-bottom: 0.4em;
+  border-bottom: 3px solid black;
+}
+
+.dashboard-enrolled__pathways {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+  padding: 0 3em;
+}
+
+.dashboard-enrolled__pathway {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+.dashboard-enrolled__pathway .dashboard-enrolled-pathway__icon {
+  height: 60px;
+  width: 60px;
+  background-color: #ced0dc;
+}
+.dashboard-enrolled__pathway .dashboard-enrolled-pathway__description {
+  margin-top: 1.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.dashboard-enrolled__pathway .dashboard-enrolled-pathway__description h2 {
+  font-family: PoppinsBold, sans-serif;
+  font-size: 2rem;
+}
+.dashboard-enrolled__pathway .dashboard-enrolled-pathway__buttons {
+  margin-top: 1.6em;
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard-enrolled__pathway .dashboard-enrolled-pathway__buttons button {
+  flex: 1;
+}
+
+:root {
+  --bg-primary: #5974e6;
+  --bg-secondary: #C96BE6;
+  --background: #0a0a0a;
+  --navbar-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../assets/fonts/Teachers-Bold.ttf");
+}
+@font-face {
+  font-family: PoppinsExtraBold;
+  src: url("../assets/fonts/Teachers-ExtraBold.ttf");
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("../assets/fonts/Teachers-Regular.ttf");
+}
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url("../assets/fonts/Teachers-SemiBold.ttf");
+}
+body {
+  font-family: PoppinsRegular, sans-serif !important;
+}

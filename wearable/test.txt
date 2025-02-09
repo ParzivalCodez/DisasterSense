@@ -1,0 +1,67 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class DashboardScreen extends StatefulWidget {
+  const DashboardScreen({super.key});
+
+  @override
+  State<DashboardScreen> createState() => _DashboardScreenState();
+}
+
+class _DashboardScreenState extends State<DashboardScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const Expanded(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [Icon(Icons.menu), Icon(Icons.notifications)],
+          ),
+        ),
+        Flexible(
+          flex: 5,
+          child: Column(
+            children: [
+              Flexible(
+                flex: 3,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 30.0,
+                      width: 30.0,
+                      color: Colors.red,
+                    ),
+                    Text(
+                      "Welcome, Hector",
+                      style: GoogleFonts.dmSans(fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                        style: GoogleFonts.dmSans(fontSize: 8))
+                  ],
+                ),
+              ),
+              Flexible(
+                  flex: 1,
+                  child: GridView.count(
+                    crossAxisCount: 3,
+                    children: [
+                      Container(
+                        color: Colors.red,
+                      ),
+                      Container(
+                        color: Colors.black,
+                      ),
+                      Container(
+                        color: Colors.red,
+                      ),
+                    ],
+                  )),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}

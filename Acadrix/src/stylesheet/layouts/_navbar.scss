@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  height: var(--navbar-height);
+  justify-content: space-between;
+  background-color: var(--background);
+  color: white;
+  align-items: center;
+  padding: 2em 3em;
+
+
+  .navbar__brand {
+    font-family: PoppinsExtraBold, sans-serif;
+    font-size: 2.3rem;
+  }
+
+  .navbar__items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    .navbar__item {
+      a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1em;
+      }
+    }
+
+  }
+}
+
+.text__gradient {
+  background: linear-gradient(90deg, var(--bg-secondary), var(--bg-secondary), var(--bg-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

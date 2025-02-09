@@ -1,0 +1,24 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../assets/fonts/Teachers-Bold.ttf");
+}
+
+@font-face {
+  font-family: PoppinsExtraBold;
+  src: url("../assets/fonts/Teachers-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("../assets/fonts/Teachers-Regular.ttf");
+}
+
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url("../assets/fonts/Teachers-SemiBold.ttf");
+}
+
+
+body {
+  font-family: PoppinsRegular, sans-serif !important;
+}

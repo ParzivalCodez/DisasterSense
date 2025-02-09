@@ -1,0 +1,72 @@
+#dashboard__wrapper {
+  height: 100vh;
+  padding: 2em;
+  display: grid;
+  grid-template-rows: auto 1.3fr 1fr 1fr;
+}
+
+.relatives {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dashboard-greeting__wrapper {
+  h1 {
+    font-weight: 700;
+    font-family: "Teachers", sans-serif;
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-family: "Teachers", sans-serif;
+    font-size: 1.2rem;
+  }
+}
+
+.relatives {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
+}
+
+.relatives__card {
+  display: grid;
+  grid-template-rows: 0.6fr 0.4fr;
+  font-family: "Teachers", sans-serif;
+  background-color: #F0ECE5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+
+  .relatives-card__description {
+    padding: 1em;
+    padding-top: 2em;
+
+    p {
+      margin-top: 0.4em;
+    }
+  }
+
+  .relatives-card__buttons {
+    display: grid;
+    //padding: 0.3em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.relatives-card__banner {
+  background-color: orange;
+  padding: 1em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.relatives-card__buttons {
+  //padding: 0.2em;
+  margin: 1em;
+}
+
+.relative-group-button__create {
+  border: 3px dashed red;
+  padding: 1em;
+}

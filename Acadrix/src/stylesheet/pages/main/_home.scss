@@ -1,0 +1,40 @@
+.hero {
+  height: calc(50vh - var(--navbar-height));
+  background-color: var(--background);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero__cta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(ellipse, rgba(88, 116, 230, 0.6) 10%, var(--background) 50%);
+
+    h1 {
+      font-family: PoppinsBold, sans-serif;
+      font-size: 3.8rem;
+      max-width: 15ch;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    p {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    .hero-cta__buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 3em;
+
+      .button__primary {
+        flex: 1;
+      }
+    }
+  }
+}

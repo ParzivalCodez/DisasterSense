@@ -1,0 +1,36 @@
+.hero {
+  height: calc(100vh - var(--navbar-height));
+  padding: 2em 2em;
+  //display: flex;
+  align-items: center;
+  //background-color: orange;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.hero__cta {
+
+  grid-row: 3;
+
+  h1 {
+    font-weight: 700;
+    font-family: "Teachers", sans-serif;
+    font-size: 3.5rem;
+    width: 23ch;
+    line-height: 1.5;
+  }
+
+  p {
+    margin: 1.8em 0;
+  }
+}
+
+.hero-info {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 200;
+  font-size: 3rem !important;
+  width: 23ch;
+  line-height: 1.5;
+  margin-top: 2em;
+}
